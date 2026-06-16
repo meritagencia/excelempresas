@@ -3094,13 +3094,11 @@
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(collectData())
         });
-        formContent.style.display = "none";
-        modalSuccess.style.display = "block";
+        window.location.href = "obrigado.html";
       } catch (err) {
         console.error("Erro ao enviar:", err);
         globalError.textContent = "Não foi possível enviar agora. Tente novamente em instantes.";
         globalError.classList.add("show");
-      } finally {
         btnNext.disabled = false;
         btnNext.textContent = "Enviar proposta";
       }
