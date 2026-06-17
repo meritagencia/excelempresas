@@ -1470,7 +1470,7 @@
               "id": "fase_2",
               "label": "PILAR 02",
               "title": "Imersão",
-              "conteudo": "Treinamento ao vivo, presencial ou online, com exercícios baseados em planilhas reais do dia a dia da sua equipe."
+              "conteudo": "Treinamento prático com a sua equipe, utilizando exercícios baseados em planilhas reais do seu dia a dia."
             },
             {
               "id": "fase_3",
@@ -1658,13 +1658,26 @@
           .testimonial-card iframe, .video-facade { width: 100%; aspect-ratio: 9/16; object-fit: cover; display: block; border: none; }
           .video-facade {
             position: relative; min-height: 360px;
-            background: #1a1a1a url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="%2380A673" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>') no-repeat center;
-            cursor: pointer; border-radius: 8px; transition: background-color .3s; overflow: hidden;
+            background-color: #1a1a1a;
+            background-image: 
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="%2380A673" stroke="%2380A673" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>'),
+              linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+              var(--thumb, none);
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-position: center, center, center;
+            background-size: auto, auto, cover;
+            cursor: pointer; border-radius: 8px; transition: all .3s; overflow: hidden;
           }
-          .video-facade:hover { background-color: #222; }
+          .video-facade:hover {
+            background-image: 
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="%23a8c49b" stroke="%23a8c49b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>'),
+              linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              var(--thumb, none);
+          }
           .video-facade::after {
             content: 'Clique para assistir'; position: absolute; bottom: 20px; left: 0; width: 100%;
-            text-align: center; font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 1px;
+            text-align: center; font-size: 11px; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 1px;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.8);
           }
           @media(max-width:960px){
             .testimonials-grid {
@@ -1679,16 +1692,24 @@
 
         <div class="testimonials-grid reveal">
           <div class="testimonial-card">
-            <button class="video-facade" type="button" data-video="https://player-vz-de871842-4a9.tv.pandavideo.com.br/embed/?autoplay=1&v=dbca6bac-c672-482a-9b1f-b5de78bd2a16" aria-label="Assistir depoimento 1"></button>
+            <button class="video-facade" type="button" 
+              style="--thumb: url('https://b-vz-de871842-4a9.tv.pandavideo.com.br/dbca6bac-c672-482a-9b1f-b5de78bd2a16/thumbnail.jpg');"
+              data-video="https://player-vz-de871842-4a9.tv.pandavideo.com.br/embed/?autoplay=1&v=dbca6bac-c672-482a-9b1f-b5de78bd2a16" aria-label="Assistir depoimento 1"></button>
           </div>
           <div class="testimonial-card">
-            <button class="video-facade" type="button" data-video="https://player-vz-de871842-4a9.tv.pandavideo.com.br/embed/?autoplay=1&v=05a09c81-9e97-4b93-86e4-75fd5017153f" aria-label="Assistir depoimento 2"></button>
+            <button class="video-facade" type="button" 
+              style="--thumb: url('https://b-vz-de871842-4a9.tv.pandavideo.com.br/05a09c81-9e97-4b93-86e4-75fd5017153f/thumbnail.jpg');"
+              data-video="https://player-vz-de871842-4a9.tv.pandavideo.com.br/embed/?autoplay=1&v=05a09c81-9e97-4b93-86e4-75fd5017153f" aria-label="Assistir depoimento 2"></button>
           </div>
           <div class="testimonial-card">
-            <button class="video-facade" type="button" data-video="https://player-vz-de871842-4a9.tv.pandavideo.com.br/embed/?autoplay=1&v=e1fe3b6c-2515-4a36-8d38-549c07784a99" aria-label="Assistir depoimento 3"></button>
+            <button class="video-facade" type="button" 
+              style="--thumb: url('https://b-vz-de871842-4a9.tv.pandavideo.com.br/e1fe3b6c-2515-4a36-8d38-549c07784a99/thumbnail.jpg');"
+              data-video="https://player-vz-de871842-4a9.tv.pandavideo.com.br/embed/?autoplay=1&v=e1fe3b6c-2515-4a36-8d38-549c07784a99" aria-label="Assistir depoimento 3"></button>
           </div>
           <div class="testimonial-card">
-            <button class="video-facade" type="button" data-video="https://player-vz-de871842-4a9.tv.pandavideo.com.br/embed/?autoplay=1&v=d577355f-d58d-4c70-bb49-5001ee830aeb" aria-label="Assistir depoimento 4"></button>
+            <button class="video-facade" type="button" 
+              style="--thumb: url('https://b-vz-de871842-4a9.tv.pandavideo.com.br/d577355f-d58d-4c70-bb49-5001ee830aeb/thumbnail.jpg');"
+              data-video="https://player-vz-de871842-4a9.tv.pandavideo.com.br/embed/?autoplay=1&v=d577355f-d58d-4c70-bb49-5001ee830aeb" aria-label="Assistir depoimento 4"></button>
           </div>
         </div>
 
@@ -1727,7 +1748,7 @@
           <div class="logo-item"><img src="Empresas/Group 1171276661.png" alt="empresa" /></div>
           <div class="logo-item"><img src="Empresas/Group 1171276662.png" alt="empresa" /></div>
           <div class="logo-item"><img src="Empresas/Group 1171276663.png" alt="empresa" /></div>
-          <div class="logo-item"><img src="Empresas/Group 1171276664.png" alt="empresa" /></div>
+
           <div class="logo-item"><img src="Empresas/Group 1171276665.png" alt="empresa" /></div>
           <div class="logo-item"><img src="Empresas/Group 1171276666.png" alt="empresa" /></div>
           <div class="logo-item"><img src="Empresas/Group 1171276667.png" alt="empresa" /></div>
@@ -1741,7 +1762,7 @@
           <div class="logo-item"><img src="Empresas/Group 1171276661.png" alt="empresa" /></div>
           <div class="logo-item"><img src="Empresas/Group 1171276662.png" alt="empresa" /></div>
           <div class="logo-item"><img src="Empresas/Group 1171276663.png" alt="empresa" /></div>
-          <div class="logo-item"><img src="Empresas/Group 1171276664.png" alt="empresa" /></div>
+
           <div class="logo-item"><img src="Empresas/Group 1171276665.png" alt="empresa" /></div>
           <div class="logo-item"><img src="Empresas/Group 1171276666.png" alt="empresa" /></div>
           <div class="logo-item"><img src="Empresas/Group 1171276667.png" alt="empresa" /></div>
@@ -2280,7 +2301,7 @@
           </article>
           <article class="step">
             <div class="step-num">3</div>
-            <h3>Treinamento ao vivo</h3>
+            <h3>Treinamento com a equipe</h3>
             <p>Sua equipe treinada com exemplos do próprio dia a dia. Em dias, os resultados já começam a aparecer.</p>
           </article>
         </div>
